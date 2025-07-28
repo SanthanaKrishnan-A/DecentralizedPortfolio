@@ -1,0 +1,51 @@
+.skills-section {
+    background-color: white;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    padding: 40px 20px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+/* ========= Skill Icons ========== */
+.skills-section img {
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+.skills-section img:hover {
+    transform: scale(1.2);
+    opacity: 0.8;
+}
+
+/* ========= Media Queries ========== */
+@media screen and (max-width: 768px) {
+    .skills-section {
+        gap: 30px;
+        padding: 30px 10px;
+    }
+
+    .skills-section img {
+        width: 45px;
+        height: 45px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .skills-section {
+        gap: 15px;
+        padding: 20px 10px;
+    }
+
+    .skills-section img {
+        width: 40px;
+        height: 40px;
+    }
+}

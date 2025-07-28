@@ -1,0 +1,42 @@
+.socials {
+    background-color: white;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    padding: 20px 0;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+.socials .icon {
+    color: black;
+    height: 60px;
+    width: 60px;
+    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.socials .icon:hover {
+    transform: scale(1.1);
+    color: black;
+}
+
+/* ========= Responsive Design ========== */
+@media screen and (max-width: 768px) {
+    .socials {
+        gap: 50px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .socials {
+        gap: 20px;
+        padding: 12px 0;
+    }
+
+    .socials .icon {
+        height: 40px;
+        width: 40px;
+    }
+}

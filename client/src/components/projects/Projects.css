@@ -1,0 +1,165 @@
+.project-section {
+    color: black;
+    width: 100%;
+    min-height: 100vh;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+/* ========= Section Title ========== */
+.project-section .title {
+    font-size: 28px;
+    text-transform: uppercase;
+    padding-bottom: 4px;
+    border-bottom: 2px solid black;
+    width: fit-content;
+    text-align: center;
+}
+
+/* ========= Project Cards ========== */
+.project-card {
+    height: 400px;
+    width: 300px;
+    background-color: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.project-card:hover {
+    transform: scale(1.06);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* ========= Card Image ========== */
+.project-card .card-img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-card .card-img img {
+    margin-top: 14px;
+    border-radius: 8px;
+    width: 274px;
+    height: 274px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.project-card:hover .card-img img {
+    transform: scale(1.02);
+}
+
+/* ========= Card Text ========== */
+.card-wrapper a {
+    text-decoration: none;
+    color: black;
+}
+
+.project-section .card-text h3 {
+    color:black;
+    font-weight: 800;
+    text-align: center;
+    margin: 12px 14px 0px 14px;
+}
+
+.project-section .card-text p {
+    color:BLACK;
+    margin: 10px 14px 0px 14px;
+    font-weight: 300;
+    text-align: center;
+    opacity: 0.8;
+}
+
+/* ========= Cards Wrapper ========== */
+.project-section .card-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 70px;
+    max-width: 1200px;
+}
+
+/* ========= Donate Button ========== */
+.project-section .donate {
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 8px 24px;
+    border-radius: 20px;
+    border: 1px solid black;
+    opacity: 0.9;
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.project-section .donate:hover {
+    background-color: black;
+    transform: scale(1.05);
+}
+
+/* ========= Donate Icon ========== */
+.project-section .icon {
+    width: 18px;
+    height: 18px;
+    margin-left: 8px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.project-section .donate:hover .icon {
+    transform: rotate(10deg);
+}
+
+/* ========= Media Queries ========== */
+@media screen and (max-width: 768px) {
+    .project-section .card-wrapper {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .project-card {
+        width: 90%;
+        max-width: 320px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .project-section {
+        padding-top: 60px;
+        gap: 50px;
+    }
+
+    .project-section .title {
+        font-size: 24px;
+    }
+
+    .project-section .card-wrapper {
+        gap: 30px;
+        margin-bottom: 20px;
+    }
+
+    .project-card {
+        width: 90%;
+        max-width: 300px;
+    }
+
+    .project-section .donate {
+        font-size: 14px;
+        font-weight: 400;
+        margin-bottom: 40px;
+    }
+
+    .project-section .icon {
+        width: 16px;
+        height: 16px;
+    }
+}
